@@ -3,25 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
+    <title>Login</title>
     <style>
-        h1,form{
-            text-align: center;
-            margin: 20px;
-            border-style: double;
-            background-color: aqua;
-        }
+        input{
+        text-align: center;
+        margin:10px 0 10px 0;
+        display: flex;
+        background-color: lightgray;
+       }
+       .style{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+       h1{
+        text-align: center;
+        margin: 100px 0 0 0;
+        padding: 20px;
+       }
+       form{
+        border: 2px solid;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: bisque;
+       }
     </style>
 </head>
 <body>
-    <h1>LOGIN</h1>
+    <h1>Login</h1>
+    <div class="style">
     <form>
-        <label for="uname">USERNAME:</label>
-        <input type="text" id="uname" name="uname"><br><br>
-        <label for="pass">PASSWORD:</label>
-        <input type="password" id="pass" name="pass"><br><br>
-        <input type="submit" value="LOGIN">
-        <button type="button" onclick="location.href='HTML.html'">BACK</button>
+        <label for="uname">User name:</label>
+        <input type="text" id="uname" name="uname" placeholder="Your name" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="password" required>
+        <a href="Intex.html" style="color: blue;">Sign up</a>
+        <a href="http://" style="float: right;">Login</a>
     </form>
+</div>
 </body>
 </html>
